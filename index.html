@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mentor IA Academy - La academia online líder en Chile para aprender Inteligencia Artificial, programación y desarrollo tech.">
+    <title>Mentor IA Academy | Cursos Digitales y Tech</title>
+    <!-- Favicon inline SVG -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2250%22 fill=%22%237B2FF7%22/><path d=%22M50 20 L80 80 L20 80 Z%22 fill=%22%232FE6E0%22/></svg>">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div id="custom-cursor" aria-hidden="true"></div>
+
+    <!-- Top Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                Mentor IA
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#cursos">Cursos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#metodo">Método</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                    <li class="nav-item ms-lg-3"><a class="btn btn-primary btn-nav mt-2 mt-lg-0" href="#unete">Únete Hoy</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero section-padding">
+        <div class="container position-relative z-2">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-7 text-center text-lg-start mt-5 mt-lg-0">
+                    <span class="badge badge-cyan mb-3">Futuro Digital</span>
+                    <h1 class="display-3 fw-bold mb-4">Domina la tecnología con <br><span class="text-gradient">Mentor IA Academy</span></h1>
+                    <p class="lead mb-5 hero-text">
+                        Aprende con expertos, domina las herramientas del mañana y <br class="d-none d-lg-block"><span id="typing-text"></span><span class="cursor"></span>
+                    </p>
+                    <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
+                        <a href="#cursos" class="btn btn-primary btn-lg px-5">Ver Cursos</a>
+                        <a href="#metodo" class="btn btn-outline-light btn-lg px-5 btn-outline-cyan">Nuestro Método</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 d-none d-lg-block">
+                    <div class="hero-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800&auto=format&fit=crop" alt="Estudiantes programando juntos" class="img-fluid rounded-4 shadow-lg hero-img">
+                        <div class="glow-orb"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Trust Proof -->
+    <section class="trust-section py-5 border-top border-bottom border-dark">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-6 col-md-3">
+                    <div class="trust-stat">15,000+</div>
+                    <div class="trust-label">Alumnos Activos</div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="trust-stat">98%</div>
+                    <div class="trust-label">Tasa de Inserción</div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="trust-stat">45+</div>
+                    <div class="trust-label">Cursos Avanzados</div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="trust-stat">4.9/5</div>
+                    <div class="trust-label">Valoración Promedio</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Courses -->
+    <section id="cursos" class="section-padding bg-darker">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold mb-3">Cursos Destacados</h2>
+                <p class="lead text-muted">Domina las habilidades más demandadas en el mercado chileno y global.</p>
+            </div>
+            <div class="row g-4">
+                <!-- Course 1 -->
+                <div class="col-md-4">
+                    <div class="card course-card h-100 bg-dark text-white border-0">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Código en pantalla">
+                        <div class="card-body">
+                            <span class="badge bg-purple mb-2">Desarrollo Web</span>
+                            <h3 class="card-title h5">Fullstack JS Master</h3>
+                            <p class="card-text text-muted small">Domina React, Node.js y bases de datos desde cero a experto.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 d-flex justify-content-between align-items-center pb-3">
+                            <span class="price mono-text text-cyan">$89.990</span>
+                            <a href="#" class="btn btn-sm btn-outline-cyan">Inscribirme</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Course 2 -->
+                <div class="col-md-4">
+                    <div class="card course-card h-100 bg-dark text-white border-0">
+                        <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Inteligencia Artificial concepto">
+                        <div class="card-body">
+                            <span class="badge bg-purple mb-2">Inteligencia Artificial</span>
+                            <h3 class="card-title h5">Prompt Engineering</h3>
+                            <p class="card-text text-muted small">Aprende a integrar APIs de LLMs y automatizar procesos con IA.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 d-flex justify-content-between align-items-center pb-3">
+                            <span class="price mono-text text-cyan">$75.000</span>
+                            <a href="#" class="btn btn-sm btn-outline-cyan">Inscribirme</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Course 3 -->
+                <div class="col-md-4">
+                    <div class="card course-card h-100 bg-dark text-white border-0">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Análisis de datos">
+                        <div class="card-body">
+                            <span class="badge bg-purple mb-2">Data Science</span>
+                            <h3 class="card-title h5">Data Analytics Pro</h3>
+                            <p class="card-text text-muted small">Python, Pandas, PowerBI y Machine Learning básico para negocios.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 d-flex justify-content-between align-items-center pb-3">
+                            <span class="price mono-text text-cyan">$95.500</span>
+                            <a href="#" class="btn btn-sm btn-outline-cyan">Inscribirme</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="metodo" class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=800&auto=format&fit=crop" alt="Estudiante enfocada en su laptop" class="img-fluid rounded-4 shadow">
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <h2 class="fw-bold mb-4">Aprende a tu ritmo, <br><span class="text-cyan">aprende con IA</span></h2>
+                    
+                    <div class="step-item d-flex mb-4">
+                        <div class="step-icon text-cyan mono-text h4 me-3">01</div>
+                        <div>
+                            <h4 class="h5">Rutas Personalizadas</h4>
+                            <p class="text-muted">Nuestra plataforma adapta el contenido a tu nivel de conocimiento actual.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step-item d-flex mb-4">
+                        <div class="step-icon text-cyan mono-text h4 me-3">02</div>
+                        <div>
+                            <h4 class="h5">Proyectos Reales</h4>
+                            <p class="text-muted">Desarrolla portafolios con casos de uso del mercado laboral chileno.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step-item d-flex">
+                        <div class="step-icon text-cyan mono-text h4 me-3">03</div>
+                        <div>
+                            <h4 class="h5">Mentoría Continua</h4>
+                            <p class="text-muted">Accede a foros y a nuestro asistente inteligente 24/7 para resolver dudas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonios" class="section-padding bg-darker">
+        <div class="container">
+            <h2 class="fw-bold text-center mb-5">Historias de Éxito</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card p-4 rounded-4 bg-dark h-100">
+                        <p class="mb-4">"El curso de Fullstack cambió mi carrera. En 4 meses pasé de trabajar en ventas a mi primer rol como Junior Dev en una startup de Santiago."</p>
+                        <div class="d-flex align-items-center mt-auto">
+                            <div class="avatar bg-purple text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px; font-weight: bold;">CM</div>
+                            <div>
+                                <h5 class="mb-0 h6">Camila M.</h5>
+                                <span class="text-cyan mono-text small">Junior Developer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card p-4 rounded-4 bg-dark h-100">
+                        <p class="mb-4">"Lo que más destaco es la calidad de los proyectos. No son los típicos tutoriales, son apps que realmente puedes mostrar en entrevistas."</p>
+                        <div class="d-flex align-items-center mt-auto">
+                            <div class="avatar bg-purple text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px; font-weight: bold;">DP</div>
+                            <div>
+                                <h5 class="mb-0 h6">Diego P.</h5>
+                                <span class="text-cyan mono-text small">Data Analyst</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card p-4 rounded-4 bg-dark h-100">
+                        <p class="mb-4">"El soporte de la IA integrada en la plataforma te ahorra horas de frustración. Mentor IA Academy es otro nivel de aprendizaje online."</p>
+                        <div class="d-flex align-items-center mt-auto">
+                            <div class="avatar bg-purple text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px; font-weight: bold;">VR</div>
+                            <div>
+                                <h5 class="mb-0 h6">Valentina R.</h5>
+                                <span class="text-cyan mono-text small">UX/UI Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section-padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="fw-bold text-center mb-5">Preguntas Frecuentes</h2>
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item bg-dark border-secondary mb-3 rounded overflow-hidden">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false" aria-controls="faq1">
+                                    ¿Necesito experiencia previa para empezar?
+                                </button>
+                            </h3>
+                            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    No, tenemos rutas de aprendizaje diseñadas desde cero. Solo necesitas un computador con conexión a internet y muchas ganas de aprender.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-dark border-secondary mb-3 rounded overflow-hidden">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                                    ¿Los cursos incluyen certificado?
+                                </button>
+                            </h3>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    Sí, al finalizar y aprobar el proyecto final de cada ruta, recibes un certificado digital verificable que puedes añadir a tu LinkedIn.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-dark border-secondary mb-3 rounded overflow-hidden">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                                    ¿Cuáles son los métodos de pago?
+                                </button>
+                            </h3>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    Aceptamos Webpay (tarjetas de crédito/débito chilenas), transferencia bancaria y pagos internacionales a través de PayPal.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Closing CTA -->
+    <section id="unete" class="cta-section text-center">
+        <div class="container position-relative z-2">
+            <h2 class="display-5 fw-bold mb-4">¿Listo para impulsar tu carrera?</h2>
+            <p class="lead mb-5 max-w-700 mx-auto">Únete a miles de profesionales que ya están construyendo el futuro digital. Comienza tu primera clase gratis hoy.</p>
+            <a href="#cursos" class="btn btn-primary btn-lg px-5 py-3 fs-5">Comenzar Ahora</a>
+        </div>
+        <div class="cta-bg-gradient"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark border-top border-secondary py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="navbar-brand d-inline-flex align-items-center mb-3 h4 text-white text-decoration-none" href="#">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                        Mentor IA
+                    </a>
+                    <p class="text-muted small">La academia online que revoluciona el aprendizaje tech en Chile. Diseñado para los creadores del mañana.</p>
+                </div>
+                <div class="col-6 col-lg-2 offset-lg-2">
+                    <h5 class="text-white mb-3 h6">Navegación</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#cursos" class="text-muted text-decoration-none footer-link">Cursos</a></li>
+                        <li><a href="#metodo" class="text-muted text-decoration-none footer-link">Método</a></li>
+                        <li><a href="#faq" class="text-muted text-decoration-none footer-link">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5 class="text-white mb-3 h6">Legal</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-muted text-decoration-none footer-link">Términos</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none footer-link">Privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h5 class="text-white mb-3 h6">Contacto</h5>
+                    <p class="text-muted small mono-text">hola@mentoria.cl</p>
+                    <p class="text-muted small mono-text">+56 9 1234 5678</p>
+                </div>
+            </div>
+            <div class="border-top border-secondary pt-4 mt-4 text-center">
+                <p class="text-muted small mb-0">&copy; 2026 Mentor IA Academy. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chat Widget -->
+    <div id="chat-widget" class="chat-widget">
+        <!-- Chat Button -->
+        <button id="chat-toggle" class="chat-toggle btn btn-primary shadow-lg d-flex align-items-center justify-content-center" aria-label="Abrir asistente virtual" aria-expanded="false" aria-controls="chat-window">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="chat-icon"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="close-icon d-none"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+
+        <!-- Chat Window -->
+        <div id="chat-window" class="chat-window bg-darker rounded-4 shadow-lg border border-secondary" role="dialog" aria-modal="true" aria-label="Asistente de Mentor IA" hidden>
+            <div class="chat-header bg-dark p-3 rounded-top-4 border-bottom border-secondary d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                    <div class="chat-avatar bg-purple text-white rounded-circle d-flex align-items-center justify-content-center me-2" style="width: 40px; height: 40px; font-weight: bold;">IA</div>
+                    <div>
+                        <h4 class="h6 mb-0 text-white">Mentor IA</h4>
+                        <span class="small text-cyan d-flex align-items-center"><span class="status-dot bg-cyan rounded-circle d-inline-block me-1"></span>Online</span>
+                    </div>
+                </div>
+                <button id="chat-close" class="btn-close btn-close-white" aria-label="Cerrar asistente"></button>
+            </div>
+            
+            <div id="chat-body" class="chat-body p-3 overflow-auto" aria-live="polite">
+                <!-- Messages will be injected here -->
+            </div>
+            
+            <div class="chat-footer p-3 bg-dark rounded-bottom-4 border-top border-secondary">
+                <div class="input-group">
+                    <input type="text" class="form-control bg-darker text-white border-secondary chat-input mono-text" placeholder="Escribe tu consulta..." aria-label="Mensaje" disabled>
+                    <button class="btn btn-primary" type="button" disabled aria-label="Enviar mensaje">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmxc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
